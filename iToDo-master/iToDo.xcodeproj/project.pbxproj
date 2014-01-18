@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E472E80A180FA93C00D8CA3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E809180FA93C00D8CA3B /* Foundation.framework */; };
+		E472E80C180FA93C00D8CA3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E80B180FA93C00D8CA3B /* CoreGraphics.framework */; };
+		E472E80E180FA93C00D8CA3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E80D180FA93C00D8CA3B /* UIKit.framework */; };
+		E472E814180FA93C00D8CA3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E472E812180FA93C00D8CA3B /* InfoPlist.strings */; };
+		E472E816180FA93C00D8CA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E815180FA93C00D8CA3B /* main.m */; };
+		E472E81A180FA93C00D8CA3B /* VnuAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E819180FA93C00D8CA3B /* VnuAppDelegate.m */; };
+		E472E81D180FA93C00D8CA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E472E81B180FA93C00D8CA3B /* Main.storyboard */; };
+		E472E820180FA93C00D8CA3B /* VnuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E81F180FA93C00D8CA3B /* VnuViewController.m */; };
+		E472E822180FA93C00D8CA3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E472E821180FA93C00D8CA3B /* Images.xcassets */; };
+		E472E829180FA93C00D8CA3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E828180FA93C00D8CA3B /* XCTest.framework */; };
+		E472E82A180FA93C00D8CA3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E809180FA93C00D8CA3B /* Foundation.framework */; };
+		E472E82B180FA93C00D8CA3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E80D180FA93C00D8CA3B /* UIKit.framework */; };
+		E472E833180FA93C00D8CA3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E472E831180FA93C00D8CA3B /* InfoPlist.strings */; };
+		E472E835180FA93C00D8CA3B /* iToDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E834180FA93C00D8CA3B /* iToDoTests.m */; };
+		E472E840180FC0EE00D8CA3B /* VnuToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E83F180FC0EE00D8CA3B /* VnuToDoItem.m */; };
+		E472E843180FC33F00D8CA3B /* VnuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E842180FC33F00D8CA3B /* VnuTableViewCell.m */; };
+		E472E845180FC3A700D8CA3B /* VnuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E472E844180FC3A700D8CA3B /* VnuTableViewCell.xib */; };
+		E472E848180FD16100D8CA3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472E847180FD16100D8CA3B /* QuartzCore.framework */; };
+		E472E84B180FD1E500D8CA3B /* VnuToDoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E472E84A180FD1E500D8CA3B /* VnuToDoLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E472E82C180FA93C00D8CA3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E472E7FE180FA93C00D8CA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E472E805180FA93C00D8CA3B;
+			remoteInfo = iToDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E472E806180FA93C00D8CA3B /* iToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E472E809180FA93C00D8CA3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E472E80B180FA93C00D8CA3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E472E80D180FA93C00D8CA3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E472E811180FA93C00D8CA3B /* iToDo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iToDo-Info.plist"; sourceTree = "<group>"; };
+		E472E813180FA93C00D8CA3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E472E815180FA93C00D8CA3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E472E817180FA93C00D8CA3B /* iToDo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iToDo-Prefix.pch"; sourceTree = "<group>"; };
+		E472E818180FA93C00D8CA3B /* VnuAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VnuAppDelegate.h; sourceTree = "<group>"; };
+		E472E819180FA93C00D8CA3B /* VnuAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VnuAppDelegate.m; sourceTree = "<group>"; };
+		E472E81C180FA93C00D8CA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E472E81E180FA93C00D8CA3B /* VnuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VnuViewController.h; sourceTree = "<group>"; };
+		E472E81F180FA93C00D8CA3B /* VnuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VnuViewController.m; sourceTree = "<group>"; };
+		E472E821180FA93C00D8CA3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E472E827180FA93C00D8CA3B /* iToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E472E828180FA93C00D8CA3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E472E830180FA93C00D8CA3B /* iToDoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iToDoTests-Info.plist"; sourceTree = "<group>"; };
+		E472E832180FA93C00D8CA3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E472E834180FA93C00D8CA3B /* iToDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iToDoTests.m; sourceTree = "<group>"; };
+		E472E83E180FC0EE00D8CA3B /* VnuToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VnuToDoItem.h; sourceTree = "<group>"; };
+		E472E83F180FC0EE00D8CA3B /* VnuToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VnuToDoItem.m; sourceTree = "<group>"; };
+		E472E841180FC33F00D8CA3B /* VnuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VnuTableViewCell.h; sourceTree = "<group>"; };
+		E472E842180FC33F00D8CA3B /* VnuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VnuTableViewCell.m; sourceTree = "<group>"; };
+		E472E844180FC3A700D8CA3B /* VnuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VnuTableViewCell.xib; sourceTree = "<group>"; };
+		E472E846180FC51000D8CA3B /* VnuTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VnuTableViewCellDelegate.h; sourceTree = "<group>"; };
+		E472E847180FD16100D8CA3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E472E849180FD1E500D8CA3B /* VnuToDoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VnuToDoLabel.h; sourceTree = "<group>"; };
+		E472E84A180FD1E500D8CA3B /* VnuToDoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VnuToDoLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E472E803180FA93C00D8CA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E848180FD16100D8CA3B /* QuartzCore.framework in Frameworks */,
+				E472E80C180FA93C00D8CA3B /* CoreGraphics.framework in Frameworks */,
+				E472E80E180FA93C00D8CA3B /* UIKit.framework in Frameworks */,
+				E472E80A180FA93C00D8CA3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E472E824180FA93C00D8CA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E829180FA93C00D8CA3B /* XCTest.framework in Frameworks */,
+				E472E82B180FA93C00D8CA3B /* UIKit.framework in Frameworks */,
+				E472E82A180FA93C00D8CA3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E472E7FD180FA93C00D8CA3B = {
+			isa = PBXGroup;
+			children = (
+				E472E849180FD1E500D8CA3B /* VnuToDoLabel.h */,
+				E472E84A180FD1E500D8CA3B /* VnuToDoLabel.m */,
+				E472E83E180FC0EE00D8CA3B /* VnuToDoItem.h */,
+				E472E83F180FC0EE00D8CA3B /* VnuToDoItem.m */,
+				E472E80F180FA93C00D8CA3B /* iToDo */,
+				E472E82E180FA93C00D8CA3B /* iToDoTests */,
+				E472E808180FA93C00D8CA3B /* Frameworks */,
+				E472E807180FA93C00D8CA3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E472E807180FA93C00D8CA3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E472E806180FA93C00D8CA3B /* iToDo.app */,
+				E472E827180FA93C00D8CA3B /* iToDoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E472E808180FA93C00D8CA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E472E847180FD16100D8CA3B /* QuartzCore.framework */,
+				E472E809180FA93C00D8CA3B /* Foundation.framework */,
+				E472E80B180FA93C00D8CA3B /* CoreGraphics.framework */,
+				E472E80D180FA93C00D8CA3B /* UIKit.framework */,
+				E472E828180FA93C00D8CA3B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E472E80F180FA93C00D8CA3B /* iToDo */ = {
+			isa = PBXGroup;
+			children = (
+				E472E818180FA93C00D8CA3B /* VnuAppDelegate.h */,
+				E472E819180FA93C00D8CA3B /* VnuAppDelegate.m */,
+				E472E81B180FA93C00D8CA3B /* Main.storyboard */,
+				E472E81E180FA93C00D8CA3B /* VnuViewController.h */,
+				E472E81F180FA93C00D8CA3B /* VnuViewController.m */,
+				E472E846180FC51000D8CA3B /* VnuTableViewCellDelegate.h */,
+				E472E841180FC33F00D8CA3B /* VnuTableViewCell.h */,
+				E472E844180FC3A700D8CA3B /* VnuTableViewCell.xib */,
+				E472E842180FC33F00D8CA3B /* VnuTableViewCell.m */,
+				E472E821180FA93C00D8CA3B /* Images.xcassets */,
+				E472E810180FA93C00D8CA3B /* Supporting Files */,
+			);
+			path = iToDo;
+			sourceTree = "<group>";
+		};
+		E472E810180FA93C00D8CA3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E472E811180FA93C00D8CA3B /* iToDo-Info.plist */,
+				E472E812180FA93C00D8CA3B /* InfoPlist.strings */,
+				E472E815180FA93C00D8CA3B /* main.m */,
+				E472E817180FA93C00D8CA3B /* iToDo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E472E82E180FA93C00D8CA3B /* iToDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E472E834180FA93C00D8CA3B /* iToDoTests.m */,
+				E472E82F180FA93C00D8CA3B /* Supporting Files */,
+			);
+			path = iToDoTests;
+			sourceTree = "<group>";
+		};
+		E472E82F180FA93C00D8CA3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E472E830180FA93C00D8CA3B /* iToDoTests-Info.plist */,
+				E472E831180FA93C00D8CA3B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E472E805180FA93C00D8CA3B /* iToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E472E838180FA93C00D8CA3B /* Build configuration list for PBXNativeTarget "iToDo" */;
+			buildPhases = (
+				E472E802180FA93C00D8CA3B /* Sources */,
+				E472E803180FA93C00D8CA3B /* Frameworks */,
+				E472E804180FA93C00D8CA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iToDo;
+			productName = iToDo;
+			productReference = E472E806180FA93C00D8CA3B /* iToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E472E826180FA93C00D8CA3B /* iToDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E472E83B180FA93C00D8CA3B /* Build configuration list for PBXNativeTarget "iToDoTests" */;
+			buildPhases = (
+				E472E823180FA93C00D8CA3B /* Sources */,
+				E472E824180FA93C00D8CA3B /* Frameworks */,
+				E472E825180FA93C00D8CA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E472E82D180FA93C00D8CA3B /* PBXTargetDependency */,
+			);
+			name = iToDoTests;
+			productName = iToDoTests;
+			productReference = E472E827180FA93C00D8CA3B /* iToDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E472E7FE180FA93C00D8CA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Vnu;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = vnu;
+				TargetAttributes = {
+					E472E826180FA93C00D8CA3B = {
+						TestTargetID = E472E805180FA93C00D8CA3B;
+					};
+				};
+			};
+			buildConfigurationList = E472E801180FA93C00D8CA3B /* Build configuration list for PBXProject "iToDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E472E7FD180FA93C00D8CA3B;
+			productRefGroup = E472E807180FA93C00D8CA3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E472E805180FA93C00D8CA3B /* iToDo */,
+				E472E826180FA93C00D8CA3B /* iToDoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E472E804180FA93C00D8CA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E822180FA93C00D8CA3B /* Images.xcassets in Resources */,
+				E472E845180FC3A700D8CA3B /* VnuTableViewCell.xib in Resources */,
+				E472E814180FA93C00D8CA3B /* InfoPlist.strings in Resources */,
+				E472E81D180FA93C00D8CA3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E472E825180FA93C00D8CA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E833180FA93C00D8CA3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E472E802180FA93C00D8CA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E820180FA93C00D8CA3B /* VnuViewController.m in Sources */,
+				E472E81A180FA93C00D8CA3B /* VnuAppDelegate.m in Sources */,
+				E472E843180FC33F00D8CA3B /* VnuTableViewCell.m in Sources */,
+				E472E840180FC0EE00D8CA3B /* VnuToDoItem.m in Sources */,
+				E472E84B180FD1E500D8CA3B /* VnuToDoLabel.m in Sources */,
+				E472E816180FA93C00D8CA3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E472E823180FA93C00D8CA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E472E835180FA93C00D8CA3B /* iToDoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E472E82D180FA93C00D8CA3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E472E805180FA93C00D8CA3B /* iToDo */;
+			targetProxy = E472E82C180FA93C00D8CA3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E472E812180FA93C00D8CA3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E472E813180FA93C00D8CA3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E472E81B180FA93C00D8CA3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E472E81C180FA93C00D8CA3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E472E831180FA93C00D8CA3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E472E832180FA93C00D8CA3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E472E836180FA93C00D8CA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E472E837180FA93C00D8CA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E472E839180FA93C00D8CA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iToDo/iToDo-Prefix.pch";
+				INFOPLIST_FILE = "iToDo/iToDo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E472E83A180FA93C00D8CA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iToDo/iToDo-Prefix.pch";
+				INFOPLIST_FILE = "iToDo/iToDo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E472E83C180FA93C00D8CA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iToDo.app/iToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iToDo/iToDo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iToDoTests/iToDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E472E83D180FA93C00D8CA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iToDo.app/iToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iToDo/iToDo-Prefix.pch";
+				INFOPLIST_FILE = "iToDoTests/iToDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E472E801180FA93C00D8CA3B /* Build configuration list for PBXProject "iToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472E836180FA93C00D8CA3B /* Debug */,
+				E472E837180FA93C00D8CA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E472E838180FA93C00D8CA3B /* Build configuration list for PBXNativeTarget "iToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472E839180FA93C00D8CA3B /* Debug */,
+				E472E83A180FA93C00D8CA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E472E83B180FA93C00D8CA3B /* Build configuration list for PBXNativeTarget "iToDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E472E83C180FA93C00D8CA3B /* Debug */,
+				E472E83D180FA93C00D8CA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E472E7FE180FA93C00D8CA3B /* Project object */;
+}
